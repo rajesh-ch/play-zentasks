@@ -17,7 +17,7 @@ public class Task extends Model {
 	public Date dueDate;
 	public String folder;
 	@ManyToOne
-	public User assignedTo;
+	public Member assignedTo;
 	@ManyToOne
 	public Project project;
 	

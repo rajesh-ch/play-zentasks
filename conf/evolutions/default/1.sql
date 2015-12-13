@@ -21,7 +21,7 @@ create table task (
   constraint pk_task primary key (id))
 ;
 
-create table user (
+create table "user" (
   email                     varchar(255) not null,
   name                      varchar(255),
   password                  varchar(255),
@@ -61,7 +61,7 @@ drop table if exists project_user;
 
 drop table if exists task;
 
-drop table if exists user;
+drop table if exists "user";
 
 SET REFERENTIAL_INTEGRITY TRUE;
 

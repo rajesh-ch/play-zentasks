@@ -23,9 +23,9 @@ public class Project extends Model {
 	public String folder;
 	
 	@ManyToMany(cascade = CascadeType.REMOVE)
-	public List<User> members = new ArrayList<User>();
+	public List<Member> members = new ArrayList<Member>();
 	
-	public Project(String name, String folder, User owner)
+	public Project(String name, String folder, Member owner)
 	{
 		
 		this.name = name;
@@ -38,7 +38,7 @@ public class Project extends Model {
 
 	public static Project create(String name,String folder,String owner){
 		
-		Project project = new Project(name,folder,User.find.ref(owner));
+		Project project = new Project(name,folder,Member.find.ref(owner));
 		project.save();
 		project.saveManyToManyAssociations("members");
 		
