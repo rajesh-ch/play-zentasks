@@ -1,17 +1,17 @@
 
-# Users
+# Members
 
-- &bob !!models.User
+- &bob !!models.Member
     email:      bob@example.com
     name:       Bob
     password:   secret
 
-- &jane !!models.User
+- &jane !!models.Member
     email:      jane@example.com
     name:       Jane
     password:   secret
 
-- &jeff !!models.User
+- &jeff !!models.Member
     email:      jeff@example.com
     name:       Jeff
     password:   secret
